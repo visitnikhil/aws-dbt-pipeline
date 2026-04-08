@@ -1,0 +1,11 @@
+name: 'aws_dbt_pipeline'
+version: '1.0'
+config-version: 2
+
+profile: 'default'
+
+model-paths: ["models"]
+
+models:
+  aws_dbt_pipeline:
+    +materialized: table
